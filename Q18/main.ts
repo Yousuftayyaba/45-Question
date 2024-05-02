@@ -1,0 +1,14 @@
+let favoritePlaces: string[] = ["Makkah", "Madina", "Dubai", "Turkey", "Maldives"];
+console.log("original order:", favoritePlaces);
+console.log("alphabetical order:",[...favoritePlaces].sort());
+console.log("original order after sorting:", favoritePlaces);
+console.log("reverse alphabetical order:", [...favoritePlaces].sort().reverse());
+console.log("origina; order afer reverse sorting:", favoritePlaces);
+favoritePlaces.reverse();
+console.log("Reverse order:", favoritePlaces);
+favoritePlaces.reverse();
+console.log("Back to original order:", favoritePlaces);
+favoritePlaces.sort();
+console.log("sorted in alphabetical orderr:", favoritePlaces);
+favoritePlaces.sort((a, b) => b. localeCompare(a));
+console.log("sorted in reverse alphabetical orderr:", favoritePlaces);
